@@ -1,0 +1,28 @@
+body{
+    font-family: "Poppins", system-ui;
+}
+
+header{
+    background-color: rgba(161, 41, 61, 1);
+    color: white;
+    height: 91px;
+    
+}
+#l{
+    position: absolute;
+}
+
+#la{
+    background-color: rgba(222, 101, 112, 1);
+    height: 89vh;
+    width: 288px;
+    position: absolute;
+    margin-bottom: 300p;
+}
+#frame{
+    background-color: rgba(195, 195, 195, 1);
+    height: 500px;
+    width: 800px;
+    margin-top: 50px;
+}
+
