@@ -1,6 +1,10 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body {
     font-family: "Poppins", system-ui;
-  }
+}
 .header {
     height: 80px;
     background-color: #A1293D;
@@ -10,15 +14,24 @@ body {
 .sidebar {
     height: calc(100vh - 80px); /* Ocupa o restante da tela abaixo do header */
     background-color: #DE6570;
+    /* Primary */
+    margin: 0px;
 }
 .sidebar p {
+    margin-top: 30px;
     margin-bottom: 30px; /* Espaçamento entre os parágrafos */
     color: white;
 }
 .user {
-    margin-bottom: 60px; /* Espaçamento entre os parágrafos */
+    height: 150px; /* Define a altura da div */
+    width: 100%;
+    display: flex;
+    justify-content: center;  /* Centraliza o conteúdo horizontalmente */
+    align-items: flex-end;    /* Alinha o conteúdo na parte inferior da div */
+    border-bottom: 1px solid black;  /* Apenas para visualização da div */
     color: white;
 }
+
 .sidebar a { /* Espaçamento entre os parágrafos */
     text-decoration: none;
     display: block;
@@ -40,7 +53,7 @@ body {
 
 .central-box {
     width: 100%;
-    max-width: 600px;
+    max-width: 1200px;
     height: 100%;
     max-height: 600px;
     background-color: #ccc;
@@ -48,6 +61,11 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+#data{
+    height: 23px;
+    width: 84px;
+    border-radius: 1px solid black;
 }
 .central-text {
     position: relative;
@@ -60,7 +78,10 @@ body {
     .header {
         height: 60px;
     }
-
+    .user {
+        padding-bottom: 0px; /* Espaçamento entre os parágrafos */
+        color: white;
+    }
     .sidebar {
         height: auto;
         min-height: 100px;
@@ -75,24 +96,28 @@ body {
     }
 
     .central-box {
+        width: 100%;
+        height: 100%;
         max-width: 400px;
         max-height: 400px;
     }
 
     .central-text {
-        top: -40px; /* Ajustar a posição do texto no mobile */
+        top: 10px; /* Ajustar a posição do texto no mobile */
         left: -30px;
     }
 }
 
 @media (max-width: 576px) {
     .central-box {
-        max-width: 300px;
-        max-height: 300px;
+        width: 100%;
+        height: 100%;
+        max-width: 500px;
+        max-height: 700px;
     }
 
     .central-text {
-        top: -35px;
+        top: 10px;
         left: -20px;
     }
 }
