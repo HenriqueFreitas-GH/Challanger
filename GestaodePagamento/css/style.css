@@ -112,6 +112,20 @@ body {
     top: 15px;
     right: 300px;
 }
+.btn-custom { 
+    position: relative !important;
+    padding: 0.2rem 0.2rem !important; /* Reduz o preenchimento do botão */
+    border: #f0f0f0 !important;
+    top: -4px !important;
+}
+.dropdown-item {
+    padding: 10px 20px; /* Espaçamento interno dos itens do dropdown */
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+    border: #f0f0f0;
+}
 #valor{
     height: 23px;
     width: 87px;
@@ -119,6 +133,12 @@ body {
     top: 15px;
     right: 203px;
 }
+.form-control{
+    width: 30px;
+    height: 20px;
+    border-radius: 0px !important;
+}
+
 .bi-chevron-down{
     font-size: 0.8rem;
     padding-left: 12px;
@@ -267,7 +287,7 @@ th h4{
         height: 23px;
         width: 87px;
         position: absolute;
-        top: 10px;
+        top: -10px;
         right: 195px;
     }
     #valor{

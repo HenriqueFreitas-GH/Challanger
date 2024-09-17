@@ -44,11 +44,26 @@
 
                 
                     <input type="date" class="form-control caixa" id="data"id="datePicker" placeholder="Escolha uma data">
+                                    
+                    <div class="caixa"  id="tipo">
+                      <div class="dropdown">
+                      <button class="btn btn-custom dropdown-toggle" type="button" id="dropdownMenuButton"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                        Tipo
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Pix</a></li>
+                        <li><a class="dropdown-item" href="#">Boleto</a></li>
+                        <li><a class="dropdown-item" href="#">Cartão</a></li>
+                    </ul>
+                    </div>
+                    </div>
+
                     
-                  
-                    
-                    <div id="tipo" class="caixa"><p>Tipo<i class="bi bi-chevron-down"></i></p></div>
-                    <div id="valor" class="caixa"><p>Valor<i class="bi bi-chevron-down"></i></p></div>
+                    <div id="valor" class="caixa">
+                   <input type="text" id="valorInput" class="form-control" placeholder="Valor: ">  
+                    </div>
+
                     <div>
                       <i class="bi bi-search"></i>
                       <input type="text"placeholder="Buscar" id="buscar" class="caixa"> 
@@ -192,5 +207,24 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      function formatCurrency(value) {
+          const number = parseFloat(value.replace(/[^0-9]/g, '')) / 100;
+          return number.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      }
+
+      document.getElementById('valorInput').addEventListener('input', function (e) {
+          const input = e.target;
+          input.value = formatCurrency(input.value);
+      });
+
+      // Optional: Handle paste event to format pasted values
+      document.getElementById('valorInput').addEventListener('paste', function (e) {
+          e.preventDefault();
+          const pasteData = e.clipboardData.getData('text');
+          const formattedValue = formatCurrency(pasteData);
+          document.execCommand('insertText', false, formattedValue);
+      });
+  </script>
 </body>
 </html>
