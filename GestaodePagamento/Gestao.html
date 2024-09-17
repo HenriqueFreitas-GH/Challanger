@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header class="header d-flex justify-content-between align-items-center p-3">
+        <p>BackOfice Ifood</p> 
+        <a href="#"class="eser"><p>User Maneger</p></a>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar Lateral -->
+            <div class="col-12 col-md-2 sidebar">
+                <div class="user">
+                  <img src="css/icon/images.jfif" alt="" class="imgUser">
+                    <a href="#"><p class="nomeUser">Usuário</p></a>
+                </div>
+                <a href="#" class="Menu"><p>DashBoard</p></a>
+                <a href="#" class="Menu"><p>Saldo e Transações</p></a> 
+                <a href="#" class="Menu"><p>Gestão de Pagamentos</p></a>
+                <a href="#" class="Menu"><p>Relatório e Análise Financeira</p></a>
+                <a href="#" class="Menu"><p>Segurança e Controle de Acesso</p></a> 
+            </div>
+
+            <!-- Conteúdo Central -->
+            <div class="col-12 col-md-10 content">
+                <!-- Texto acima do conteúdo central -->
+                <h2 class="central-text">Gestão De Pagamento</h2>
+                <!-- Quadrado Central Aumentado -->
+                <div class="central-box">
+
+                
+                    <input type="date" class="form-control caixa" id="data"id="datePicker" placeholder="Escolha uma data">
+                                    
+                    <div class="caixa"  id="tipo">
+                      <div class="dropdown">
+                      <button class="btn btn-custom dropdown-toggle" type="button" id="dropdownMenuButton"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                        Tipo
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Pix</a></li>
+                        <li><a class="dropdown-item" href="#">Boleto</a></li>
+                        <li><a class="dropdown-item" href="#">Cartão</a></li>
+                    </ul>
+                    </div>
+                    </div>
+
+                    
+                    <div id="valor" class="caixa">
+                   <input type="text" id="valorInput" class="form-control" placeholder="Valor: ">  
+                    </div>
+
+                    <div>
+                      <i class="bi bi-search"></i>
+                      <input type="text"placeholder="Buscar" id="buscar" class="caixa"> 
+                    </div>
+                    <table class="table table-bordered custom-table">
+                        <tr> <!-- 1 LInha -->
+                            <th scope="col">ID <h4>10398376</h4></th>
+                            <th scope="col">Data de vencimento<h4>xx/xx/xxxx</h4></th>
+                            <th scope="col">Valor<h4>R$x,xxx,xx</h4></th>
+                            <th scope="col">Tipo de Transação<h4>PIX</h4></th>
+                            <th scope="col">Status<h4>incompleta</h4></th>
+                            <th scope="col">
+                                <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">  
+                                  Foi Pago   
+                                </label>
+                                
+                                <button type="button"
+                                 class="arredondada"><h6>Enviar Lembrete</h6></button> 
+                            </th>
+                          </tr>
+                          <tr><!-- 2 LInha -->
+                              <th scope="col">ID <h4>10398376</h4></th>
+                              <th scope="col">Data de vencimento<h4>xx/xx/xxxx</h4></th>
+                              <th scope="col">Valor<h4>R$x,xxx,xx</h4></th>
+                            <th scope="col">Tipo de Transação<h4>PIX</h4></th>
+                            <th scope="col">Status<h4>incompleta</h4></th>
+                              <th scope="col"> <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label>  
+                                  Foi Pago   
+                                </label>
+                                
+                                <button type="button" class="arredondada"><h6>Enviar Lembrete</h6></button>
+                              </th>
+                            </tr>
+                            <tr><!-- 3 LInha -->
+                              <th scope="col">ID <h4>10398376</h4></th>
+                              <th scope="col">Data de vencimento<h4>xx/xx/xxxx</h4></th>
+                              <th scope="col">Valor<h4>R$x,xxx,xx</h4></th>
+                            <th scope="col">Tipo de Transação<h4>PIX</h4></th>
+                            <th scope="col">Status<h4>incompleta</h4></th>
+                              <th scope="col"> <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label>  
+                                  Foi Pago   
+                                </label>
+                                
+                                <button type="button"
+                                 class="arredondada"><h6>Enviar Lembrete</h6></button> 
+                                </th>
+                            </tr>
+                            
+                            <tr><!-- 7 LInha -->
+                              <th scope="col">ID <h4>10398376</h4></th>
+                              <th scope="col">Data de vencimento<h4>xx/xx/xxxx</h4></th>
+                              <th scope="col">Valor<h4>R$x,xxx,xx</h4></th>
+                            <th scope="col">Tipo de Transação<h4>PIX</h4></th>
+                            <th scope="col">Status<h4>incompleta</h4></th>
+                              <th scope="col"> <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label>  
+                                  Foi Pago   
+                                </label>
+                                
+                                <button type="button"
+                                class="arredondada"><h6>Enviar Lembrete</h6></button> 
+                              </th>
+                            </tr>
+                            <tr><!-- 8 LInha -->
+                              <th scope="col">ID <h4>10398376</h4></th>
+                              <th scope="col">Data de vencimento<h4>xx/xx/xxxx</h4></th>
+                              <th scope="col">Valor<h4>R$x,xxx,xx</h4></th>
+                            <th scope="col">Tipo de Transação<h4>PIX</h4></th>
+                            <th scope="col">Status<h4>incompleta</h4></th>
+                              <th scope="col"> <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label>  
+                                  Foi Pago   
+                                </label>
+                                
+                                <button type="button"
+                                 class="arredondada"><h6>Enviar Lembrete</h6></button> 
+                                </th>
+                            </tr>
+                            <tr><!-- 9 LInha -->
+                              <th scope="col">ID <h4>10398376</h4></th>
+                              <th scope="col">Data de vencimento<h4>xx/xx/xxxx</h4></th>
+                              <th scope="col">Valor<h4>R$x,xxx,xx</h4></th>
+                            <th scope="col">Tipo de Transação<h4>PIX</h4></th>
+                            <th scope="col">Status<h4>incompleta</h4></th>
+                              <th scope="col"> <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label>  
+                                  Foi Pago   
+                                </label>
+                                
+                                <button type="button"
+                                 class="arredondada"><h6>Enviar Lembrete</h6></button> 
+                                </th>
+                            </tr>
+                            <tr><!-- 10 LInha -->
+                              <th scope="col">ID <h4>10398376</h4></th>
+                              <th scope="col">Data de vencimento<h4>xx/xx/xxxx</h4></th>
+                              <th scope="col">Valor<h4>R$x,xxx,xx</h4></th>
+                            <th scope="col">Tipo de Transação<h4>PIX</h4></th>
+                            <th scope="col">Status<h4>incompleta</h4></th>
+                              <th scope="col"> <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label>  
+                                  Foi Pago   
+                                </label>
+                                
+                                <button type="button"
+                                 class="arredondada"><h6>Enviar Lembrete</h6></button> 
+                                </th>
+                            </tr>
+                            <tr><!-- 11 LInha -->
+                              <th scope="col">ID <h4>10398376</h4></th>
+                              <th scope="col">Data de vencimento<h4>xx/xx/xxxx</h4></th>
+                              <th scope="col">Valor<h4>R$x,xxx,xx</h4></th>
+                            <th scope="col">Tipo de Transação<h4>PIX</h4></th>
+                            <th scope="col">Status<h4>incompleta</h4></th>
+                              <th scope="col"> <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label>  
+                                  Foi Pago   
+                                </label>
+                                
+                                <button type="button"
+                                 class="arredondada"><h6>Enviar Lembrete</h6></button> 
+                                </th>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      function formatCurrency(value) {
+          const number = parseFloat(value.replace(/[^0-9]/g, '')) / 100;
+          return number.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      }
+
+      document.getElementById('valorInput').addEventListener('input', function (e) {
+          const input = e.target;
+          input.value = formatCurrency(input.value);
+      });
+
+      // Optional: Handle paste event to format pasted values
+      document.getElementById('valorInput').addEventListener('paste', function (e) {
+          e.preventDefault();
+          const pasteData = e.clipboardData.getData('text');
+          const formattedValue = formatCurrency(pasteData);
+          document.execCommand('insertText', false, formattedValue);
+      });
+  </script>
+</body>
+</html>
