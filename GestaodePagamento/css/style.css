@@ -10,6 +10,10 @@ body {
     background-color: #A1293D;
     color: white;
 }
+.eser{
+    color: white;
+    text-decoration: none !important;
+}
 
 .sidebar {
     height: calc(100vh); /* Ocupa o restante da tela abaixo do header */
@@ -86,38 +90,56 @@ body {
     border: 1px solid #A1293D;
     
 }
+
 #data{
     height: 23px;
     width: 87px;
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 397px;
+    border: 1px solid #A1293D;
+    border-radius: 0%;
+}
+.bi-calendar{
+    position: relative;
+    font-size: 0.8rem;
+    left: -10px;
 }
 #tipo{
     height: 23px;
     width: 87px;
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 300px;
 }
 #valor{
     height: 23px;
     width: 87px;
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 203px;
 }
+.bi-chevron-down{
+    font-size: 0.8rem;
+    padding-left: 12px;
+}
+.bi-search{
+    position: absolute;
+    pointer-events: none;
+}
 #buscar{
+    padding-left: 7px;
     height: 23px;
     width: 168px;
     text-align: left;
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 25px;
+    box-sizing: border-box;
 }
-
-
-
+#buscar p{
+    padding-left: 3px;
+}
 
 .custom-table{
     position: relative;
@@ -146,13 +168,16 @@ th h4{
     height: 23px;
     width: 160px;
     position: relative;
-    left: 70px;
+    left: 30px;
     top: -20px;
     text-align: right;
     background-color: #A1293D;
     color: white;
     border: 1px solid black;
     border-radius: 20px;
+}
+.arredondada:hover{
+    background-color: #8f1429;
 }
 .arredondada h6{
     font-weight: lighter;
@@ -216,11 +241,11 @@ th h4{
     }
 
     .central-box {
-        margin-top: 190px;
+        margin-top: 70px;
         width: 100%;
         height: 100%;
-        max-width: 400px;
-        max-height: 500px;
+        max-width: 800px;
+        max-height: 1000px;
     }
 
     .central-text {
@@ -231,10 +256,10 @@ th h4{
   
     #data{
         height: 23px;
-        width: 87px;
+        width: 70px;
         position: absolute;
         top: 10px;
-        right: 222px;
+        right: 292px;
         
         
     }
@@ -243,18 +268,21 @@ th h4{
         width: 87px;
         position: absolute;
         top: 10px;
-        right: 145px;
+        right: 195px;
     }
     #valor{
         height: 23px;
         width: 70px;
         position: absolute;
         top: 10px;
-        right: 85px;
+        right: 115px;
     }
+
+    
+   
     #buscar{
         height: 23px;
-        width: 70px;
+        width: 80px;
         text-align: left;
         position: absolute;
         top: 10px;
@@ -267,8 +295,8 @@ th h4{
     .central-box {
         width: 100%;
         height: 100%;
-        max-width: 500px;
-        max-height: 700px;
+        max-width: 800px;
+        max-height: 1000px;
         top: -80px;
     }
 
@@ -283,30 +311,30 @@ th h4{
 
     #data{
         height: 23px;
-        width: 87px;
+        width: 70px;
         position: absolute;
         top: 10px;
-        right: 222px;
+        right: 275px;
         
         
     }
     #tipo{
         height: 23px;
-        width: 87px;
+        width: 70px;
         position: absolute;
         top: 10px;
-        right: 145px;
+        right: 195px;
     }
     #valor{
         height: 23px;
         width: 70px;
         position: absolute;
         top: 10px;
-        right: 85px;
+        right: 115px;
     }
     #buscar{
         height: 23px;
-        width: 70px;
+        width: 80px;
         text-align: left;
         position: absolute;
         top: 10px;
